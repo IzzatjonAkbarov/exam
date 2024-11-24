@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard</title>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/svg/logo.svg"
+      type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <div class="loader-container" id="loader">
+      <div class="loader"></div>
+    </div>
+    <div id="content" style="display: none"></div>
+    <!-- dashboard -->
+    <!-- main all is in here -->
+    <main class="flex">
+      <!-- left side bar start -->
+      <aside
+        class="basis-[15%] pt-[26px] h-[100vh] border-r max-[1145px]:hidden">
+        <a href="./index.html" class="flex items-center flex-col pb-[26px]">
+          <nav class="flex items-center gap-4">
+            <img src="./src/assets/svg/logo.svg" alt="" />
+            <nav class="flex items-start flex-col">
+              <h1 class="text-span-blue text-[18px] font-bold">Khan</h1>
+              <p class="text-span-blue text-[14px] font-normal">Academy</p>
+            </nav>
+          </nav>
+        </a>
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center gap-10 asideself hover:text-span-blue">
+            <div
+              class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+            <div class="flex items-center gap-2 asidemain w-full">
+              <img
+                class="sidebarimg"
+                src="./src/assets/svg/sidebar1.svg"
+                alt="" />
+              <a
+                href=""
+                class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                >Umumiy</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center gap-10 asideself hover:text-span-blue">
+            <div
+              class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+            <div class="flex items-center gap-2 asidemain w-full">
+              <img
+                class="sidebarimg"
+                src="./src/assets/svg/sidebar2.svg"
+                alt="" />
+              <a
+                href=""
+                class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                >kurslarim</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center gap-10 asideself hover:text-span-blue">
+            <div
+              class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+            <div class="flex items-center gap-2 asidemain w-full">
+              <img
+                class="sidebarimg"
+                src="./src/assets/svg/sidebar3.svg"
+                alt="" />
+              <a
+                href=""
+                class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                >Profilim</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center gap-10 asideself hover:text-span-blue">
+            <div
+              class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+            <div class="flex items-center gap-2 asidemain w-full">
+              <img
+                class="sidebarimg"
+                src="./src/assets/svg/sidebar4.svg"
+                alt="" />
+              <a
+                href=""
+                class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                >Topshiriqlar</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center gap-10 asideself hover:text-span-blue">
+            <div
+              class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+            <div class="flex items-center gap-2 asidemain w-full">
+              <img
+                class="sidebarimg"
+                src="./src/assets/svg/sidebar5.svg"
+                alt="" />
+              <a
+                href=""
+                class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                >Viktorina</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center gap-10 asideself hover:text-span-blue">
+            <div
+              class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+            <div class="flex items-center gap-2 asidemain w-full">
+              <img
+                class="sidebarimg"
+                src="./src/assets/svg/sidebar6.svg"
+                alt="" />
+              <a
+                href=""
+                class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                >Xabarlar</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center gap-10 asideself hover:text-span-blue">
+            <div
+              class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+            <div class="flex items-center gap-2 asidemain w-full">
+              <img
+                class="sidebarimg"
+                src="./src/assets/svg/sidebar7.svg"
+                alt="" />
+              <a
+                href=""
+                class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                >To’lovlar
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="flex flex-col gap-6 mt-8">
+          <div class="flex items-center gap-10 asideself hover:text-span-blue">
+            <div
+              class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+            <div class="flex items-center gap-2 asidemain w-full">
+              <img
+                class="sidebarimg"
+                src="./src/assets/svg/sidebar8.svg"
+                alt="" />
+              <a
+                href=""
+                class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                >Chiqish</a
+              >
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- left side bar end -->
+      <!-- right main side start -->
+      <div class="basis-[85%] max-[1145px]:basis-[100%]">
+        <!-- header start  -->
+        <header class="shadow-[0px_-2px_0px_#eff2f7] py-6 border-b">
+          <div class="flex justify-between container2 items-center gap-2">
+            <label for="check" class="max-[1145px]:block hidden">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="./index.html">
+              <button
+                class="py-[12px] px-[20px] border rounded-[30px] bg-[#f8fafc] hover:bg-[#dde3ea] active:scale-[0.9] max-[469px]:hidden">
+                Asosiy menu
+              </button>
+            </a>
+            <div class="flex justify-between gap-5">
+              <div
+                class="py-[12px] px-[20px] border rounded-[30px] bg-[#f8fafc] w-fit max-[673px]:hidden">
+                <input
+                  class="outline-none border-none bg-transparent"
+                  type="date" />
+              </div>
+              <div
+                class="py-[12px] px-[20px] border rounded-[30px] bg-[#f8fafc] w-fit flex items-center justify-between max-[940px]:hidden">
+                <input
+                  class="outline-none border-none bg-transparent"
+                  placeholder="Nimani qidiramiz?"
+                  class="border-none bg-[#f8fafc]"
+                  type="text" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <img src="./src/assets/img/notification.png" alt="" />
+              <img src="./src/assets/img/messeges.png" alt="" />
+              <div class="flex items-center gap-3">
+                <h1
+                  class="text-right text-[14px] text-[#8a90a5] max-[320px]:hidden">
+                  Kalimetov <br />
+                  Dilmurod
+                </h1>
+                <label for="profile">
+                  <img src="./src/assets/svg/avatar.svg" alt="" />
+                </label>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- header start  -->
+
+        <div class="bg-[#f8fafc] w-full">
+          <div class="container2">
+            <h1 class="text-text-blue text-[26px] font-semibold py-3">
+              Umumiy
+            </h1>
+            <div class="flex gap-4 max-[1009px]:flex-col">
+              <div
+                class="w-[70%] text-[13px] max-[1009px]:w-[100%] flex flex-col gap-6">
+                <!-- topcard start  -->
+                <div
+                  class="p-7 rounded-[12px] bg-[#fff] flex justify-between max-[1340px]:flex-col">
+                  <div
+                    class="flex items-center gap-3 px-3 border-r w-fit max-[1340px]:border-r-0 max-[1340px]:border-b max-[1340px]:w-[100%] max-[1340px]:py-3">
+                    <img src="./src/assets/img/dashboardicon.png" alt="" />
+                    <div class="max-[1340px]:w-full">
+                      <div
+                        class="flex items-center justify-between gap-10 max-[1340px]:w-[100%]">
+                        <p class="text-[40px] text-text-blue">4</p>
+                        <div
+                          class="bg-[#f4fff4] rounded-[12px] text-text-green text-[12px] py-1 px-2 w-fit">
+                          +35%
+                        </div>
+                      </div>
+                      <p class="text-[#8a90a5]">Ro’yxatdan o’tilgan kurslar</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 px-3 border-r w-fit max-[1340px]:border-r-0 max-[1340px]:border-b max-[1340px]:w-[100%] max-[1340px]:py-3">
+                    <img src="./src/assets/img/dashboardicon2.png" alt="" />
+                    <div class="max-[1340px]:w-full">
+                      <div
+                        class="flex items-center justify-between gap-10 max-[1340px]:w-[100%]">
+                        <p class="text-[40px] text-text-blue">4</p>
+                        <div
+                          class="bg-[#fffae7] rounded-[12px] text-[#ecc744] text-[12px] py-1 px-2 w-fit">
+                          +35%
+                        </div>
+                      </div>
+                      <p class="text-[#8a90a5]">Ro’yxatdan o’tilgan kurslar</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 px-3 w-fit max-[1340px]:w-[100%] max-[1340px]:py-3">
+                    <img src="./src/assets/img/dashboardicon3.png" alt="" />
+                    <div class="max-[1340px]:w-full">
+                      <div
+                        class="flex items-center justify-between gap-10 max-[1340px]:w-[100%]">
+                        <p class="text-[40px] text-text-blue">4</p>
+                        <div
+                          class="bg-[#f1f8ff] rounded-[12px] text-span-blue text-[12px] py-1 px-2 w-fit">
+                          +35%
+                        </div>
+                      </div>
+                      <p class="text-[#8a90a5]">Ro’yxatdan o’tilgan kurslar</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- topcard end  -->
+
+                <!-- faolligim start -->
+                <div class="flex gap-2 max-[668px]:flex-col">
+                  <div
+                    class="p-[10px] bg-white rounded-[12px] w-[60%] max-[668px]:w-[100%]">
+                    <div
+                      class="flex items-center justify-between py-[10px] border-b">
+                      <h2 class="text-text-blue text-[20px] font-bold">
+                        Mening faolligim
+                      </h2>
+                      <button
+                        class="text-[#8a90a5] p-1 px-[10px] border rounded-[15px] active:scale-[0.9]">
+                        Haftalik <i class="fa-solid fa-caret-down"></i>
+                      </button>
+                    </div>
+                    <div class="flex items-end justify-start gap-2">
+                      <div class="flex items-center flex-col gap-3">
+                        <p>50</p>
+                        <p>40</p>
+                        <p>30</p>
+                        <p>20</p>
+                        <p>10</p>
+                      </div>
+                      <div>
+                        <img src="./src/assets/img/linegraph.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-around">
+                      <p>Du</p>
+                      <p>Se</p>
+                      <p>Cho</p>
+                      <p>Pa</p>
+                      <p>Ju</p>
+                      <p>Sha</p>
+                      <p>yak</p>
+                    </div>
+                  </div>
+                  <div
+                    class="p-[10px] bg-white rounded-[12px] w-[40%] max-[668px]:w-[100%]">
+                    <div
+                      class="flex items-center justify-between py-[10px] border-b">
+                      <h2 class="text-text-blue text-[20px] font-bold">
+                        Topshiriqlar
+                      </h2>
+                      <button
+                        class="text-[#8a90a5] p-1 px-[10px] border rounded-[15px] active:scale-[0.9]">
+                        Haftalik <i class="fa-solid fa-caret-down"></i>
+                      </button>
+                    </div>
+                    <div>
+                      <div class="flex flex-col gap-3 pt-2">
+                        <div
+                          class="w-full h-auto p-1 bg-[#f1f8ff] rounded-[12px]">
+                          <div
+                            class="w-[70%] h-[10px] rounded-[12px] bg-span-blue"></div>
+                        </div>
+                        <div
+                          class="w-[80%] h-auto p-1 bg-[#fffae7] rounded-[12px]">
+                          <div
+                            class="w-[70%] h-[10px] rounded-[12px] bg-[#ecc744]"></div>
+                        </div>
+                        <div
+                          class="w-[90%] h-auto p-1 bg-[#f4fff4] rounded-[12px]">
+                          <div
+                            class="w-[70%] h-[10px] rounded-[12px] bg-text-green"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-2 pt-2">
+                      <div class="flex items-center gap-2">
+                        <div
+                          class="w-[12px] h-[12px] rounded-[100%] bg-span-blue"></div>
+                        <p>Bajarilgan</p>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <div
+                          class="w-[12px] h-[12px] rounded-[100%] bg-[#ecc744]"></div>
+                        <p>Bajarilmagan</p>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <div
+                          class="w-[12px] h-[12px] rounded-[100%] bg-text-green"></div>
+                        <p>Davom etayotgan</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- faolligim end -->
+                <!-- Viktorinalar and tolvlar tarixi start  -->
+                <div
+                  class="flex gap-2 max-[668px]:flex-col max-[668px]:w-[100%]">
+                  <div
+                    class="p-[10px] bg-white rounded-[12px] w-[50%] max-[668px]:w-[100%]">
+                    <div
+                      class="flex items-center justify-between py-[10px] border-b">
+                      <h2 class="text-text-blue text-[20px] font-bold">
+                        Viktorinalar
+                      </h2>
+                      <button
+                        class="text-[#8a90a5] p-1 px-[10px] border rounded-[15px] active:scale-[0.9]">
+                        Haftalik <i class="fa-solid fa-caret-down"></i>
+                      </button>
+                    </div>
+                    <div>
+                      <div
+                        class="py-[20px] border-b flex justify-between items-center max-[320px]:flex-col max-[320px]:items-start max-[320px]:gap-4">
+                        <div class="flex items-center gap-2">
+                          <img src="./src/assets/img/center.png" alt="" />
+                          <div>
+                            <h1
+                              class="text-[16px] text-text-blue font-semibold">
+                              HTML va CSS haqida
+                            </h1>
+                            <p class="text-[#8a90a5] text-[14px]">
+                              15-aprel, 22:00
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="bg-[#f4fff4] rounded-[12px] text-text-green text-[12px] py-1 px-2 w-fit">
+                          Muvaffaqqiyatli
+                        </div>
+                      </div>
+                      <div
+                        class="py-[20px] border-b flex justify-between items-center max-[320px]:flex-col max-[320px]:items-start max-[320px]:gap-4">
+                        <div class="flex items-center gap-2">
+                          <img src="./src/assets/img/center.png" alt="" />
+                          <div>
+                            <h1
+                              class="text-[16px] text-text-blue font-semibold">
+                              Phyton
+                            </h1>
+                            <p class="text-[#8a90a5] text-[14px]">
+                              23-mart, 09:30
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="bg-[#fffae7] rounded-[12px] text-[#ecc744] text-[12px] py-1 px-2 w-fit">
+                          Kutilayotgan
+                        </div>
+                      </div>
+                      <div
+                        class="py-[20px] flex justify-between items-center max-[320px]:flex-col max-[320px]:items-start max-[320px]:gap-4">
+                        <div class="flex items-center gap-2">
+                          <img src="./src/assets/img/center.png" alt="" />
+                          <div>
+                            <h1
+                              class="text-[16px] text-text-blue font-semibold">
+                              Ma’lumotlar tuzilmasi
+                            </h1>
+                            <p class="text-[#8a90a5] text-[14px]">
+                              Bugun, 16:30
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="bg-[#fffae7] rounded-[12px] text-[#ecc744] text-[12px] py-1 px-2 w-fit">
+                          Kutilayotgan
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="p-[10px] bg-white rounded-[12px] w-[50%] max-[668px]:w-[100%]">
+                    <div
+                      class="flex items-center justify-between py-[10px] border-b">
+                      <h2 class="text-text-blue text-[20px] font-bold">
+                        To’lovlar tarixi
+                      </h2>
+                      <button
+                        class="text-[#8a90a5] p-1 px-[10px] border rounded-[15px] active:scale-[0.9]">
+                        Haftalik <i class="fa-solid fa-caret-down"></i>
+                      </button>
+                    </div>
+                    <div>
+                      <div
+                        class="py-[20px] border-b flex justify-between items-center max-[1009px]:flex-row max-[320px]:flex-col max-[320px]:items-start max-[320px]:gap-4">
+                        <div class="flex items-center gap-2">
+                          <img src="./src/assets/img/ticklast.png" alt="" />
+                          <div>
+                            <h1 class="text-text-blue font-semibold">
+                              1-modul
+                            </h1>
+                            <p class="text-[#8a90a5]">20-yanvar, 2022-yil</p>
+                          </div>
+                        </div>
+                        <div
+                          class="bg-[#f1f8ff] rounded-[12px] text-span-blue text-[12px] py-1 px-2 w-fit">
+                          299 000 UZS
+                        </div>
+                      </div>
+                      <div
+                        class="py-[20px] border-b flex justify-between items-center max-[1009px]:flex-row max-[320px]:flex-col max-[320px]:items-start max-[320px]:gap-4">
+                        <div class="flex items-center gap-2">
+                          <img src="./src/assets/img/ticklast.png" alt="" />
+                          <div>
+                            <h1 class="text-text-blue font-semibold">
+                              2-modul
+                            </h1>
+                            <p class="text-[#8a90a5]">12-fevral, 2022-yil</p>
+                          </div>
+                        </div>
+                        <div
+                          class="bg-[#f1f8ff] rounded-[12px] text-span-blue text-[12px] py-1 px-2 w-fit">
+                          299 000 UZS
+                        </div>
+                      </div>
+                      <div
+                        class="py-[20px] flex justify-between items-center max-[1009px]:flex-row max-[320px]:flex-col max-[320px]:items-start max-[320px]:gap-4">
+                        <div class="flex items-center gap-2">
+                          <img src="./src/assets/img/ticklast.png" alt="" />
+                          <div>
+                            <h1 class="text-text-blue font-semibold">
+                              3-modul
+                            </h1>
+                            <p class="text-[#8a90a5]">19-mart, 2022-yil</p>
+                          </div>
+                        </div>
+                        <div
+                          class="bg-[#f1f8ff] rounded-[12px] text-span-blue text-[12px] py-1 px-2 w-fit">
+                          299 000 UZS
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Viktorinalar and tolvlar tarixi end  -->
+              </div>
+              <!-- profile start -->
+              <div
+                class="w-[35%] rounded-[12px] bg-white p-[20px] text-[13px] max-[1009px]:w-[100%]">
+                <div class="border-b pb-[25px]">
+                  <div class="flex items-center justify-between">
+                    <h1 class="text-text-blue text-[20px] font-bold">
+                      Profilim
+                    </h1>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div
+                    class="flex items-center justify-center flex-col gap-2 py-3 my-[30px]">
+                    <img src="./src/assets/img/avatar.png" alt="" />
+                    <h2 class="text-text-blue text-[24px]">
+                      Kalimbetov Dilmurod
+                    </h2>
+                    <p>O’quvchi</p>
+                  </div>
+                  <div
+                    class="flex items-center justify-between max-[1340px]:flex-col max-[1340px]:items-center max-[1340px]:gap-2 max-[1009px]:flex-row max-[1009px]:flex-col">
+                    <div class="flex items-center gap-2">
+                      <img src="./src/assets/svg/tel.svg" alt="" />
+                      <div>
+                        <p class="text-[12px] text-[#8a90a5]">
+                          Telefon raqamim
+                        </p>
+                        <a href="" class="etxt-[12px]">(90) 723 45 45</a>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img src="./src/assets/img/location.png" alt="" />
+                      <div>
+                        <p class="text-[12px] text-[#8a90a5]">Manzilim</p>
+                        <a href="" class="etxt-[12px]">Toshkent sh. Yun.</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-[13px]">
+                  <div class="flex items-center justify-between mt-[10px]">
+                    <h1 class="text-text-blue text-[20px] font-bold">
+                      Xabarlar
+                    </h1>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="flex flex-col gap-3 my-[20px]">
+                    <div
+                      class="flex justify-between border border-[#eff2f7] rounded-[12px] p-4">
+                      <div class="flex gap-2">
+                        <img src="./src/assets/img/avaimg.png" alt="" />
+                        <div>
+                          <h1 class="text-[16px] font-medium text-text-blue">
+                            Wade Warren
+                          </h1>
+                          <p class="text-ellipsis text-[13px] text-[#8a90a5]">
+                            Salom, kechagi topshiriqlarni bajardin
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="flex items-center justify-between flex-col max-[320px]:hidden">
+                        <p class="text-[#8a90a5]">11:23</p>
+                        <img src="./src/assets/img/number.png" alt="" />
+                      </div>
+                    </div>
+                    <div
+                      class="flex justify-between border border-[#eff2f7] rounded-[12px] p-4">
+                      <div class="flex gap-2">
+                        <img src="./src/assets/img/avaimg.png" alt="" />
+                        <div>
+                          <h1 class="text-[16px] font-medium text-text-blue">
+                            Wade Warren
+                          </h1>
+                          <p class="text-ellipsis text-[13px] text-[#8a90a5]">
+                            Salom, kechagi topshiriqlarni bajardin
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="flex items-center justify-between flex-col max-[320px]:hidden">
+                        <p class="text-[#8a90a5]">11:23</p>
+                        <img src="./src/assets/img/number.png" alt="" />
+                      </div>
+                    </div>
+                    <div
+                      class="flex justify-between border border-[#eff2f7] rounded-[12px] p-4">
+                      <div class="flex gap-2">
+                        <img src="./src/assets/img/avaimg.png" alt="" />
+                        <div>
+                          <h1 class="text-[16px] font-medium text-text-blue">
+                            Wade Warren
+                          </h1>
+                          <p class="text-ellipsis text-[13px] text-[#8a90a5]">
+                            Salom, kechagi topshiriqlarni bajardin
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="flex items-center justify-between flex-col max-[320px]:hidden">
+                        <p class="text-[#8a90a5]">11:23</p>
+                        <img src="./src/assets/img/number.png" alt="" />
+                      </div>
+                    </div>
+                    <button
+                      class="w-full rounded-[12px] bg-[#f8fafc] text-span-blue border border-[#f8fafc] py-[15px] hover:bg-[#b8d0e7] active:scale-[0.9]">
+                      Ko’proq ko’rish
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- profile end -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right main side end -->
+    </main>
+    <!-- this sections are for side bars  -->
+
+    <input class="hidden" id="check" type="checkbox" />
+    <header class="header2 overflow-y-auto">
+      <nav class="flex">
+        <nav
+          class="flex items-start flex-col gap-5 bg-white-color w-[80%] p-2 relative">
+          <a href="" class="flex items-center gap-3"
+            ><label class="text-[20px] text-text-gray" for="check">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <nav class="flex items-start gap-4 bg">
+              <img src="./src/assets/svg/logo.svg" alt="" />
+              <nav class="flex items-start flex-col">
+                <h1 class="text-span-blue text-[18px] font-bold">Khan</h1>
+                <p class="text-span-blue text-[14px] font-normal">Academy</p>
+              </nav>
+            </nav>
+          </a>
+
+          <aside class="basis-[100%] pt-[26px]">
+            <div
+              class="py-[12px] px-[20px] border rounded-[30px] bg-[#f8fafc] w-[100%] flex items-center justify-between">
+              <input
+                class="outline-none border-none bg-transparent"
+                placeholder="Nimani qidiramiz?"
+                class="border-none bg-[#f8fafc]"
+                type="text" />
+            </div>
+            <div class="flex flex-col gap-6">
+              <div
+                class="flex items-center gap-4 asideself hover:text-span-blue">
+                <div
+                  class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+                <div class="flex items-center gap-2 asidemain w-full">
+                  <img
+                    class="sidebarimg"
+                    src="./src/assets/svg/sidebar1.svg"
+                    alt="" />
+                  <a
+                    href=""
+                    class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                    >Umumiy</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-4 asideself hover:text-span-blue">
+                <div
+                  class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+                <div class="flex items-center gap-2 asidemain w-full">
+                  <img
+                    class="sidebarimg"
+                    src="./src/assets/svg/sidebar2.svg"
+                    alt="" />
+                  <a
+                    href=""
+                    class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                    >Umumiy</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-4 asideself hover:text-span-blue">
+                <div
+                  class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+                <div class="flex items-center gap-2 asidemain w-full">
+                  <img
+                    class="sidebarimg"
+                    src="./src/assets/svg/sidebar3.svg"
+                    alt="" />
+                  <a
+                    href=""
+                    class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                    >Umumiy</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-4 asideself hover:text-span-blue">
+                <div
+                  class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+                <div class="flex items-center gap-2 asidemain w-full">
+                  <img
+                    class="sidebarimg"
+                    src="./src/assets/svg/sidebar4.svg"
+                    alt="" />
+                  <a
+                    href=""
+                    class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                    >Umumiy</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-4 asideself hover:text-span-blue">
+                <div
+                  class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+                <div class="flex items-center gap-2 asidemain w-full">
+                  <img
+                    class="sidebarimg"
+                    src="./src/assets/svg/sidebar5.svg"
+                    alt="" />
+                  <a
+                    href=""
+                    class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                    >Umumiy</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-4 asideself hover:text-span-blue">
+                <div
+                  class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+                <div class="flex items-center gap-2 asidemain w-full">
+                  <img
+                    class="sidebarimg"
+                    src="./src/assets/svg/sidebar6.svg"
+                    alt="" />
+                  <a
+                    href=""
+                    class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                    >Umumiy</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-4 asideself hover:text-span-blue">
+                <div
+                  class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+                <div class="flex items-center gap-2 asidemain w-full">
+                  <img
+                    class="sidebarimg"
+                    src="./src/assets/svg/sidebar7.svg"
+                    alt="" />
+                  <a
+                    href=""
+                    class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                    >Umumiy</a
+                  >
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="flex flex-col gap-6 mt-8">
+              <div
+                class="flex items-center gap-4 asideself hover:text-span-blue">
+                <div
+                  class="w-2 h-[60px] bg-span-blue rounded-r-[12px] opacity-0 transition-all asideline"></div>
+                <div class="flex items-center gap-2 asidemain w-full">
+                  <img
+                    class="sidebarimg"
+                    src="./src/assets/svg/sidebar8.svg"
+                    alt="" />
+                  <a
+                    href=""
+                    class="text-[#8a90a5] text-[18px] hover:text-span-blue font-medium w-full"
+                    >Umumiy</a
+                  >
+                </div>
+              </div>
+              <a href="./index.html">
+                <button
+                  class="py-[12px] px-[20px] border rounded-[30px] bg-[#f8fafc] hover:bg-[#dde3ea] active:scale-[0.9]">
+                  Asosiy menu
+                </button></a
+              >
+            </div>
+          </aside>
+        </nav>
+        <label
+          for="check"
+          class="w-[20%] h-[100] bg-[#6766664d] backdrop-blur-[1px]">
+          <nav></nav>
+        </label>
+      </nav>
+    </header>
+    <input type="checkbox" name="" id="profile" class="hidden" />
+    <div class="rounded-[12px] bg-white p-[20px] text-[13px] avaright">
+      <div class="border-b pb-[25px]">
+        <div class="flex items-center justify-between">
+          <h1 class="text-text-blue text-[20px] font-bold">Profilim</h1>
+          <label for="profile">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </div>
+        <div
+          class="flex items-center justify-center flex-col gap-2 py-3 my-[30px]">
+          <img src="./src/assets/img/avatar.png" alt="" />
+          <h2 class="text-text-blue text-[24px]">Kalimbetov Dilmurod</h2>
+          <p>O’quvchi</p>
+        </div>
+
+        <div
+          class="flex items-center justify-between max-[1340px]:flex-col max-[1340px]:items-center max-[1340px]:gap-2 max-[1009px]:flex-row max-[1009px]:flex-col">
+          <div class="flex items-center gap-2">
+            <img src="./src/assets/svg/tel.svg" alt="" />
+            <div>
+              <p class="text-[12px] text-[#8a90a5]">Telefon raqamim</p>
+              <a href="" class="etxt-[12px]">(90) 723 45 45</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./src/assets/img/location.png" alt="" />
+            <div>
+              <p class="text-[12px] text-[#8a90a5]">Manzilim</p>
+              <a href="" class="etxt-[12px]">Toshkent sh. Yun.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 1000); // 2 seconds
+      });
+    </script>
+  </body>
+</html>

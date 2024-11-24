@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing</title>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/svg/logo.svg"
+      type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="font-Inter">
+    <div class="loader-container" id="loader">
+      <div class="loader"></div>
+    </div>
+    <div id="content" style="display: none"></div>
+    <header class="header py-6">
+      <nav class="container1 flex items-center justify-between">
+        <label for="check" class="max-[765px]:block hidden">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="">
+          <nav class="flex items-center gap-4">
+            <img src="./src/assets/svg/logo.svg" alt="" />
+            <nav class="flex items-start flex-col">
+              <h1 class="text-span-blue text-[18px] font-bold">Khan</h1>
+              <p class="text-span-blue text-[14px] font-normal">Academy</p>
+            </nav>
+          </nav>
+        </a>
+
+        <nav class="flex items-center justify-between gap-4">
+          <ul
+            class="flex items-center justify-between gap-8 text-text-blue max-[765px]:hidden">
+            <li class="hover:text-span-blue transition-all">
+              <a href="">Asosiy</a>
+            </li>
+            <li class="hover:text-span-blue transition-all">
+              <a href=""
+                >Kurslarimiz <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li class="hover:text-span-blue transition-all">
+              <a href="">Blog</a>
+            </li>
+            <li class="hover:text-span-blue transition-all">
+              <a href="">Biz haqimizda</a>
+            </li>
+            <li class="hover:text-span-blue transition-all">
+              <a href="">Bog’lanish</a>
+            </li>
+            <li class="hover:text-span-blue transition-all"><a href=""></a></li>
+          </ul>
+          <i
+            class="fa-solid fa-magnifying-glass text-text-gray max-[925px]:hidden"></i>
+          <nav class="justify-between items-center flex gap-8 text-text-blue">
+            <button
+              class="border border-[#eff2f7] rounded-[4px] py-[6px] px-[10px] max-[895px]:hidden">
+              EN <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <a href="./dashboard.html">
+              <button
+                class="border border-[#eff2f7] rounded-[8px] py-[10px] px-[20px] max-[796px]:hidden">
+                Kirish <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </a>
+            <a class="hidden max-[796px]:block" href="">
+              <label for="profile">
+                <img src="./src/assets/svg/avatar.svg" alt="" />
+              </label>
+            </a>
+          </nav>
+        </nav>
+      </nav>
+    </header>
+    <!-- showcase start -->
+    <section class="bg-[#f8fafc]">
+      <div class="container1">
+        <div
+          class="py-[100px] flex items-center justify-center flex-col max-[500px]:py-[60px]">
+          <h1
+            class="text-center text-[62px] font-extrabold max-[865px]:text-[50px] max-[700px]:text-[40px] max-[560px]:text-[30px] max-[560px]:text-[25px]">
+            <span class="text-span-blue">Dasturlashni</span>
+            biz bilan qulay <br class="max-[430px]:hidden" />
+            muhitda o‘rganing
+          </h1>
+          <p
+            class="text-center text-text-gray text-[20xp] font-normal mt-7 mb-[40px] max-[865px]:text-[16px] max-[700px]:text-[15px]">
+            Khan Academy - bu siz izlagan akademiya bo’lib, unda siz juda qisqa
+            muddatda istalgan <br class="max-[700px]:hidden" />
+            dasturlash sohasida Junior darajasiga chiqa olasiz!
+          </p>
+          <div
+            class="flex justify-center gap-4 mb-10 max-[380px]:flex-col max-[380px]:w-full">
+            <button
+              class="btn1 px-10 py-5 rounded-[8px] text-white font-semibold text-[18px] hover:text-span-blue hover:bg-white-color transition-all active:scale-[0.9]">
+              Boshlash <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button
+              class="px-10 py-5 bg-[#eff2f7] rounded-[8px] text-text-blue font-semibold text-[18px] hover:bg-black hover:text-white transition-all active:scale-[0.9]">
+              <i class="fa-brands fa-github"></i> GitHub
+            </button>
+          </div>
+          <div
+            class="py-[17px] px-[30px] w-fit flex items-center gap-4 bg-[#f4fff4] rounded-[8px] gitnation max-[350px]:py-[14px] max-[350px]:px-[20px] shadow [0px_1px_4px_#F4FFF4]">
+            <img src="./src/assets/img/tick.png" alt="" />
+            <div>
+              <p class="text-[10px] text-text-blue mb-2">
+                GitNation React Award
+              </p>
+              <h1 class="font-semibold text-text-green max-[370px]:text-[14px]">
+                Most Impactful Project <br />
+                to the Community
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- showcase end -->
+    <!-- video section start -->
+    <section class="py-[100px] max-[500px]:py-[60px]">
+      <div class="container1">
+        <div>
+          <h1
+            class="text-center text-[52px] font-extrabold max-[865px]:text-[40px] max-[700px]:text-[30px] max-[560px]:text-[20px]">
+            <span class="text-span-blue">Kam vaqtda </span>
+            ko‘proq o‘rganish
+          </h1>
+          <p
+            class="text-center text-text-gray text-[20xp] font-normal mt-7 mb-[40px] max-[865px]:text-[16px] max-[700px]:text-[15px]">
+            Khan akademiyasida juda qisqa muddatda istalgan
+            <br class="max-[700px]:hidden" />
+            dasturlash sohasida Junior darajasiga chiqa olasiz
+          </p>
+        </div>
+        <div
+          class="rounded-[14px] border border-[#8a90a5] flex items-center max-[1180px]:flex-col max-[1180px]:w-fit mx-auto">
+          <div class="basis-[60%]">
+            <video
+              class="rounded-l-[12px] max-[1180px]:rounded-l-[0px] max-[1180px]:rounded-t-[12px]"
+              controls
+              poster="./src/assets/img/poster.png"
+              src="./src/assets/video/img_vb6 copy.mp4">
+              ervecweec
+            </video>
+          </div>
+          <div class="basis-[40%] flex justify-center items-center">
+            <div class="p-5 m-5 shadow [0px_16px_10px_#EEF2F8] rounded-[10px]">
+              <img
+                class="rounded-[6px]"
+                src="./src/assets/img/room.png"
+                alt="" />
+              <div class="flex items-center gap-2 mt-3 max-[320px]:gap-1">
+                <p
+                  class="text-span-blue text-[10px] py-[4px] px-[6px] bg-[#eff2f7] rounded-[8px] w-fit max-[320px]:text-[9px]">
+                  PLUS
+                </p>
+                <p
+                  class="text-span-blue text-[10px] py-[4px] px-[6px] max-[320px]:text-[9px]">
+                  VERIFIED
+                </p>
+                <p class="h-2 w-2 rounded-[10px] bg-span-blue"></p>
+                <p
+                  class="text-span-blue text-[10px] py-[4px] px-[6px] max-[320px]:text-[9px]">
+                  CAPE TOWN
+                </p>
+              </div>
+              <div class="my-[25px]">
+                <h1 class="text-[20px] text-text-blue max-[320px]:text-[16px]">
+                  Modern, Chic Penthouse
+                </h1>
+                <p class="font-semibold text-[14px] text-[#313647] pt-[12px]">
+                  $119<span class="font-normal"> /night</span>
+                </p>
+              </div>
+              <div class="flex items-center gap-1 justify-end">
+                <div class="flex items-center gap-1">
+                  <img src="./src/assets/svg/star.svg" alt="" />
+                  <img src="./src/assets/svg/star.svg" alt="" />
+                  <img src="./src/assets/svg/star.svg" alt="" />
+                  <img src="./src/assets/svg/star.svg" alt="" />
+                  <img src="./src/assets/svg/star2.svg" alt="" />
+                </div>
+                <p class="text-[14px] font-semibold text-span-blue">
+                  4.5 <span class="font-normal">(190)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video section end -->
+    <!-- card section start -->
+    <section class="bg-[#f8fafc] py-[70px]">
+      <div class="container1">
+        <div>
+          <h1
+            class="text-center text-[52px] font-extrabold max-[865px]:text-[40px] max-[700px]:text-[30px] max-[560px]:text-[20px]">
+            Bizning ustun<span class="text-span-blue"> jihatlarimiz </span>
+          </h1>
+          <p
+            class="text-center text-text-gray text-[20xp] font-normal mt-7 mb-[40px] max-[865px]:text-[16px] max-[700px]:text-[15px]">
+            A collection of websites and projects built with Webbrain UI
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-3 gap-10 max-[887px]:grid-cols-2 max-[457px]:grid-cols-1">
+          <div
+            class="p-10 bg-[#fff] rounded-[12px] w-fit max-[1008px]:p-5 minicard hover:shadow-[0px_10px_10px_#F0F2F8] transition-all">
+            <div class="bgmoon">
+              <img
+                class="moonimg"
+                src="./src/assets/svg/moon_card1.svg"
+                alt="" />
+            </div>
+            <h1 class="text-[20px] text-text-blue pt-5 pb-1">
+              Kuchli Mentorlar
+            </h1>
+            <p class="text-[18px] text-text-gray">
+              Webbrain UI strictly follows WAIARIA standarts for all components
+              strictly follows.
+            </p>
+          </div>
+          <div
+            class="p-10 bg-[#fff] rounded-[12px] w-fit max-[1008px]:p-5 minicard hover:shadow-[0px_10px_10px_#F0F2F8] transition-all">
+            <div class="bgmoon">
+              <img
+                class="moonimg"
+                src="./src/assets/svg/paint_card2.svg"
+                alt="" />
+            </div>
+            <h1 class="text-[20px] text-text-blue pt-5 pb-1">
+              Muntazam o’rganish
+            </h1>
+            <p class="text-[18px] text-text-gray">
+              Webbrain UI strictly follows WAIARIA standarts for all components
+              strictly follows.
+            </p>
+          </div>
+          <div
+            class="p-10 bg-[#fff] rounded-[12px] w-fit max-[1008px]:p-5 minicard hover:shadow-[0px_10px_10px_#F0F2F8] transition-all">
+            <div class="bgmoon">
+              <img
+                class="moonimg"
+                src="./src/assets/svg/moon_card1.svg"
+                alt="" />
+            </div>
+            <h1 class="text-[20px] text-text-blue pt-5 pb-1">Qulay muhit</h1>
+            <p class="text-[18px] text-text-gray">
+              Webbrain UI strictly follows WAIARIA standarts for all components
+              strictly follows.
+            </p>
+          </div>
+          <div
+            class="p-10 bg-[#fff] rounded-[12px] w-fit max-[1008px]:p-5 minicard hover:shadow-[0px_10px_10px_#F0F2F8] transition-all">
+            <div class="bgmoon">
+              <img
+                class="moonimg"
+                src="./src/assets/svg/moon_card1.svg"
+                alt="" />
+            </div>
+            <h1 class="text-[20px] text-text-blue pt-5 pb-1">
+              Intensiv Darslar
+            </h1>
+            <p class="text-[18px] text-text-gray">
+              Webbrain UI strictly follows WAIARIA standarts for all components
+              strictly follows.
+            </p>
+          </div>
+          <div
+            class="p-10 bg-[#fff] rounded-[12px] w-fit max-[1008px]:p-5 minicard hover:shadow-[0px_10px_10px_#F0F2F8] transition-all">
+            <div class="bgmoon">
+              <img
+                class="moonimg"
+                src="./src/assets/svg/moon_card1.svg"
+                alt="" />
+            </div>
+            <h1 class="text-[20px] text-text-blue pt-5 pb-1">Ahil Jamoa</h1>
+            <p class="text-[18px] text-text-gray">
+              Webbrain UI strictly follows WAIARIA standarts for all components
+              strictly follows.
+            </p>
+          </div>
+          <div
+            class="p-10 bg-[#fff] rounded-[12px] w-fit max-[1008px]:p-5 minicard hover:shadow-[0px_10px_10px_#F0F2F8] transition-all">
+            <div class="bgmoon">
+              <img
+                class="moonimg"
+                src="./src/assets/svg/moon_card1.svg"
+                alt="" />
+            </div>
+            <h1 class="text-[20px] text-text-blue pt-5 pb-1">Amaliy darslar</h1>
+            <p class="text-[18px] text-text-gray">
+              Webbrain UI strictly follows WAIARIA standarts for all components
+              strictly follows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- card section end -->
+    <!-- project start -->
+    <section class="project">
+      <div class="container1">
+        <div class="flex items-center flex-col py-20">
+          <h1
+            class="text-center text-[52px] font-extrabold max-[865px]:text-[40px] max-[700px]:text-[30px] max-[560px]:text-[20px]">
+            Kelajagingizni
+            <span class="text-span-blue max-[320px]:block">
+              Khan Academy <br class="max-[500px]:hidden" />
+              bilan </span
+            >quring
+          </h1>
+          <p
+            class="text-center text-text-gray text-[20xp] font-normal mt-7 mb-[40px] max-[865px]:text-[16px] max-[700px]:text-[15px]">
+            A collection of websites and projects built with Webbrain UI
+          </p>
+          <button
+            class="btn1 px-10 py-5 rounded-[8px] text-white font-semibold text-[18px] hover:text-span-blue hover:bg-white-color transition-all active:scale-[0.9]">
+            Ko’proq ko’rish <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div
+          class="
+        ">
+          <div class="cards">
+            <div class="card1">
+              <img
+                class="w-full h-full"
+                src="./src/assets/img/result.jpg"
+                alt="" />
+              <div
+                class="khan__content flex justify-between items-end w-full h-full text-[#fff]">
+                <h1>Project Name</h1>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card2">
+              <img
+                class="w-full h-full"
+                src="./src/assets/img/result2.png"
+                alt="" />
+              <div
+                class="khan__content flex justify-between items-end w-full h-full text-[#fff]">
+                <h1>Project Name</h1>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="card3">
+              <img
+                class="w-full h-full"
+                src="./src/assets/img/result1.png"
+                alt="" />
+              <div
+                class="khan__content flex justify-between items-end w-full h-full text-[#fff]">
+                <h1>Project Name</h1>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project end -->
+    <!-- result start -->
+    <section class="bg-span-blue resultimg h-full mt-20 max-[500px]:mt-10">
+      <div class="container1 relative">
+        <div class="relative">
+          <img
+            class="absolute top-0 object-cover object-center"
+            src="./src/assets/img/bg.png"
+            alt="" />
+          <div class="flex items-center flex-col py-10">
+            <h1
+              class="text-center text-[62px] font-extrabold max-[865px]:text-[50px] max-[700px]:text-[40px] max-[560px]:text-[20px] text-[#fff]">
+              Shiddat bilan o‘sayotgan <br />
+              Khan Academy
+            </h1>
+            <p
+              class="text-center text-[#BAD4F2] text-[20xp] font-normal mt-7 mb-[40px] max-[865px]:text-[16px] max-[700px]:text-[15px]">
+              A collection of websites and projects built with Webbrain UI
+            </p>
+          </div>
+          <div class="max-[516px]:flex mx-auto">
+            <div
+              class="mx-auto flex items-center justify-between pb-10 max-[987px]:grid gap-5 grid-cols-3 max-[987px]:justify-center max-[987px]:grid-cols-2 max-[520px]:grid-cols-1">
+              <div
+                class="text-white font-medium border-l-2 pl-[33px] border-l-[#E6C751]">
+                <h2 class="text-[60px]">1.2M</h2>
+                <p class="text-[18px] text-white flex items-center gap-2">
+                  <img src="./src/assets/svg/download.svg" alt="" /> Download
+                  per month
+                </p>
+              </div>
+              <div
+                class="text-white font-medium border-l-2 pl-[33px] border-l-[#E6C751]">
+                <h2 class="text-[60px]">25.1K</h2>
+                <p class="text-[18px] text-white flex items-center gap-2">
+                  <img src="./src/assets/svg/download1.svg" alt="" /> GitHub
+                  stars
+                </p>
+              </div>
+              <div
+                class="text-white font-medium border-l-2 pl-[33px] border-l-[#E6C751]">
+                <h2 class="text-[60px]">14</h2>
+                <p class="text-[18px] text-white flex items-center gap-2">
+                  <img src="./src/assets/svg/download2.svg" alt="" /> Core
+                  contributors
+                </p>
+              </div>
+              <div
+                class="text-white font-medium border-l-2 pl-[33px] border-l-[#E6C751]">
+                <h2 class="text-[60px]">6.2K</h2>
+                <p class="text-[18px] text-white flex items-center gap-2">
+                  <img src="./src/assets/svg/download3.svg" alt="" /> Discord
+                  members
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- result end -->
+    <!-- professional start -->
+
+    <section class="bg-[#F8FAFC] p-10 max-[500px]:p-2">
+      <div class="container1">
+        <div class="flex items-center flex-col py-20">
+          <h1
+            class="text-center text-[52px] font-extrabold max-[865px]:text-[40px] max-[700px]:text-[30px] max-[560px]:text-[20px] max-[350px]:text-[19px]">
+            Bizning professional
+            <span class="text-span-blue max-[320px]:block"> jamoamiz </span>
+          </h1>
+          <p
+            class="text-center text-text-gray text-[20xp] font-normal mt-7 mb-[40px] max-[865px]:text-[16px] max-[700px]:text-[15px]">
+            A collection of websites and projects built with Webbrain UI
+          </p>
+          <button
+            class="max-[330px]:text-[14px] btn1 px-8 py-5 rounded-[8px] text-white font-semibold text-[18px] hover:text-span-blue hover:bg-white-color transition-all active:scale-[0.9]">
+            Ko’proq ko’rish <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="max-[1074px]:flex mx-auto justify-center">
+          <div
+            class="grid grid-cols-4 gap-5 max-[1074px]:grid-cols-3 max-[716px]:grid-cols-2 max-[450px]:grid-cols-1">
+            <div
+              class="rounded-[14px] w-fit bg-[#fff] hover:shadow-[0px_10px_10px_#e5eaf3] scl">
+              <div class="relative socialall">
+                <img
+                  class="rounded-t-[12px] socialimg"
+                  src="./src/assets/img/group.png"
+                  alt="" />
+                <div
+                  class="flex left-0 items-center gap-3 justify-center absolute bottom-0 social">
+                  <a href="https://telegram.org/">
+                    <img src="./src/assets/img/telegram (2).png" alt="" />
+                  </a>
+                  <a href="https://www.youtube.com/">
+                    <img src="./src/assets/img/youtube (1).png" alt=""
+                  /></a>
+                  <a href="https://uz.linkedin.com/">
+                    <img src="./src/assets/img/linkedin.png" alt=""
+                  /></a>
+                  <a href="https://telegram.org/"
+                    ><img src="./src/assets/img/telegram (2).png" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="flex justify-center items-center flex-col py-7">
+                <h1 class="font-semibold text-[18px] text-text-blue">
+                  Cameron Williamson
+                </h1>
+                <p class="font-normal text-[16px] text-text-gray">
+                  Backend Developer
+                </p>
+              </div>
+            </div>
+            <div
+              class="rounded-[14px] w-fit bg-[#fff] hover:shadow-[0px_10px_10px_#e5eaf3] scl">
+              <div class="relative socialall">
+                <img
+                  class="rounded-t-[12px] socialimg"
+                  src="./src/assets/img/group1.png"
+                  alt="" />
+                <div
+                  class="flex left-0 items-center gap-3 justify-center absolute bottom-0 social">
+                  <a href="https://telegram.org/">
+                    <img src="./src/assets/img/telegram (2).png" alt="" />
+                  </a>
+                  <a href="https://www.youtube.com/">
+                    <img src="./src/assets/img/youtube (1).png" alt=""
+                  /></a>
+                  <a href="https://uz.linkedin.com/">
+                    <img src="./src/assets/img/linkedin.png" alt=""
+                  /></a>
+                  <a href="https://telegram.org/"
+                    ><img src="./src/assets/img/telegram (2).png" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="flex justify-center items-center flex-col py-7">
+                <h1 class="font-semibold text-[18px] text-text-blue">
+                  Cameron Williamson
+                </h1>
+                <p class="font-normal text-[16px] text-text-gray">
+                  Backend Developer
+                </p>
+              </div>
+            </div>
+            <div
+              class="rounded-[14px] w-fit bg-[#fff] hover:shadow-[0px_10px_10px_#e5eaf3] scl">
+              <div class="relative socialall">
+                <img
+                  class="rounded-t-[12px] socialimg"
+                  src="./src/assets/img/group2.png"
+                  alt="" />
+                <div
+                  class="flex left-0 items-center gap-3 justify-center absolute bottom-0 social">
+                  <a href="https://telegram.org/">
+                    <img src="./src/assets/img/telegram (2).png" alt="" />
+                  </a>
+                  <a href="https://www.youtube.com/">
+                    <img src="./src/assets/img/youtube (1).png" alt=""
+                  /></a>
+                  <a href="https://uz.linkedin.com/">
+                    <img src="./src/assets/img/linkedin.png" alt=""
+                  /></a>
+                  <a href="https://telegram.org/"
+                    ><img src="./src/assets/img/telegram (2).png" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="flex justify-center items-center flex-col py-7">
+                <h1 class="font-semibold text-[18px] text-text-blue">
+                  Cameron Williamson
+                </h1>
+                <p class="font-normal text-[16px] text-text-gray">
+                  Backend Developer
+                </p>
+              </div>
+            </div>
+            <div
+              class="rounded-[14px] w-fit bg-[#fff] hover:shadow-[0px_10px_10px_#e5eaf3] scl">
+              <div class="relative socialall">
+                <img
+                  class="rounded-t-[12px] socialimg"
+                  src="./src/assets/img/group1.png"
+                  alt="" />
+                <div
+                  class="flex left-0 items-center gap-3 justify-center absolute bottom-0 social">
+                  <a href="https://telegram.org/">
+                    <img src="./src/assets/img/telegram (2).png" alt="" />
+                  </a>
+                  <a href="https://www.youtube.com/">
+                    <img src="./src/assets/img/youtube (1).png" alt=""
+                  /></a>
+                  <a href="https://uz.linkedin.com/">
+                    <img src="./src/assets/img/linkedin.png" alt=""
+                  /></a>
+                  <a href="https://telegram.org/"
+                    ><img src="./src/assets/img/telegram (2).png" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="flex justify-center items-center flex-col py-7">
+                <h1 class="font-semibold text-[18px] text-text-blue">
+                  Cameron Williamson
+                </h1>
+                <p class="font-normal text-[16px] text-text-gray">
+                  Backend Developer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- professional end -->
+    <!-- agreement start -->
+
+    <section class="bg-span-blue py-10">
+      <div class="container1 relative">
+        <img class="absolute top-0" src="./src/assets/img/bg2.png" alt="" />
+        <div class="flex items-center flex-col relative z-10">
+          <h1
+            class="text-center text-[62px] font-extrabold max-[865px]:text-[50px] max-[700px]:text-[40px] max-[560px]:text-[20px] text-[#fff]">
+            Hamkorlik qilishga tayyormisiz?
+          </h1>
+          <p
+            class="text-center text-[#BAD4F2] text-[20xp] font-normal mt-7 mb-[40px] max-[865px]:text-[16px] max-[700px]:text-[15px]">
+            Quyida bizning ustun jihatlarimiz bilan tanishing
+          </p>
+        </div>
+        <div class="relative z-10 flex items-center gap-5 flex-col">
+          <div
+            class="flex items-center gap-10 p-4 bg-white rounded-[12px] w-fit max-[579px]:flex-col">
+            <div class="flex gap-4">
+              <img src="./src/assets/svg/chart.svg" alt="" />
+              <div class="">
+                <h1 class="font-bold text-text-blue text-[18px]">
+                  Open Collective
+                </h1>
+                <p class="text-text-gray max-[320px]:text-[14px]">
+                  Sponsor the Webbrain UI maintainers
+                </p>
+              </div>
+            </div>
+            <button
+              class="btn1 px-10 py-3 rounded-[8px] text-white font-semibold text-[18px] hover:text-span-blue hover:bg-white-color transition-all active:scale-[0.9] max-[579px]:w-full">
+              Sponsor
+            </button>
+          </div>
+          <div
+            class="flex items-center gap-10 p-4 bg-white rounded-[12px] w-fit max-[579px]:flex-col">
+            <div class="flex gap-4">
+              <img src="./src/assets/svg/chart.svg" alt="" />
+              <div class="">
+                <h1 class="font-bold text-text-blue text-[18px]">
+                  Open Collective
+                </h1>
+                <p class="text-text-gray max-[320px]:text-[14px]">
+                  Sponsor the Webbrain UI maintainers
+                </p>
+              </div>
+            </div>
+            <button
+              class="btn1 px-10 py-3 rounded-[8px] text-white font-semibold text-[18px] hover:text-span-blue hover:bg-white-color transition-all active:scale-[0.9] max-[579px]:w-full">
+              Sponsor
+            </button>
+          </div>
+          <div class="flex flex-col gap-5 my-5">
+            <h1 class="text-[#BAD4F2] text-[18px] text-center">
+              ORGANIZATION SPONSORS
+            </h1>
+            <div class="">
+              <div class="flex items-center justify-between gap-5">
+                <div class="max-[584px]:w-[54px] p-3 bg-white rounded-[100%]">
+                  <img src="./src/assets/svg/google.svg" alt="" />
+                </div>
+                <div class="max-[584px]:w-[54px] p-3 bg-white rounded-[100%]">
+                  <img src="./src/assets/svg/google.svg" alt="" />
+                </div>
+                <div class="max-[584px]:w-[54px] p-3 bg-white rounded-[100%]">
+                  <img src="./src/assets/svg/google.svg" alt="" />
+                </div>
+                <div
+                  class="max-[584px]:w-[54px] p-3 bg-white rounded-[100%] max-[600px]:hidden">
+                  <img src="./src/assets/svg/google.svg" alt="" />
+                </div>
+                <div
+                  class="max-[584px]:w-[54px] p-3 bg-white rounded-[100%] max-[600px]:hidden">
+                  <img src="./src/assets/svg/google.svg" alt="" />
+                </div>
+                <div
+                  class="max-[584px]:w-[54px] p-3 bg-white rounded-[100%] max-[600px]:hidden">
+                  <img src="./src/assets/svg/google.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5 my-5">
+            <h1 class="text-[#BAD4F2] text-[18px] text-center">
+              INDIVIDUAL SPONSORS
+            </h1>
+            <div class="">
+              <div class="flex items-center justify-between gap-2">
+                <img src="./src/assets/svg/avatar1.svg" alt="" />
+                <img src="./src/assets/svg/avatar1.svg" alt="" />
+                <img src="./src/assets/svg/avatar1.svg" alt="" />
+                <img
+                  class="max-[600px]:hidden"
+                  src="./src/assets/svg/avatar1.svg"
+                  alt="" />
+                <img
+                  class="max-[600px]:hidden"
+                  src="./src/assets/svg/avatar1.svg"
+                  alt="" />
+                <img
+                  class="max-[600px]:hidden"
+                  src="./src/assets/svg/avatar1.svg"
+                  alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- agreement end -->
+    <!-- our project start  -->
+    <section>
+      <div class="container1">
+        <div class="flex items-center flex-col py-20">
+          <p
+            class="text-[18px] font-semibold text-span-blue max-[500px]:text-[15px]">
+            PREMIUM COMPONENTS
+          </p>
+          <h1
+            class="text-center text-[52px] font-extrabold max-[865px]:text-[40px] max-[700px]:text-[30px] max-[560px]:text-[28px]">
+            Bizning
+            <span class="text-span-blue"> loyihalar </span>
+          </h1>
+          <p
+            class="text-center text-text-gray text-[20xp] font-normal mt-7 mb-[40px] max-[865px]:text-[16px] max-[700px]:text-[15px]">
+            Beautiful and responsive React components to build your
+            <br class="max-[411px]:hidden" />
+            application or marketing pages quicker.
+          </p>
+          <button
+            class="btn1 px-10 py-5 rounded-[8px] text-white font-semibold text-[18px] hover:text-span-blue hover:bg-white-color transition-all active:scale-[0.9]">
+            Batafsil <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div>
+          <div class="flex items-end max-[739px]:flex-col">
+            <img
+              class="w-[30%] max-[739px]:w-[100%]"
+              src="./src/assets/img/create.png"
+              alt="" />
+            <img
+              class="w-[40%] max-[739px]:w-[100%]"
+              src="./src/assets/img/create2.png"
+              alt="" />
+            <img
+              class="w-[30%] max-[739px]:w-[100%]"
+              src="./src/assets/img/create3.png"
+              alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our project end  -->
+    <!-- strong start  -->
+    <section class="bg-[#f8fafc] mb-10">
+      <div class="container1 pb-20 relative">
+        <div class="flex items-center flex-col py-20">
+          <h1
+            class="text-center text-[52px] font-extrabold max-[865px]:text-[40px] max-[700px]:text-[30px] max-[560px]:text-[28px]">
+            Biz
+            <span class="text-span-blue"> kuchlilarni </span>tayyorlaymiz!
+          </h1>
+          <p
+            class="text-center text-text-gray text-[20xp] font-normal mt-7 mb-[40px] max-[865px]:text-[16px] max-[700px]:text-[15px]">
+            Quyida bizning ustun jihatlarimiz bilan tanishing
+          </p>
+          <button
+            class="btn1 px-10 py-5 rounded-[8px] text-white font-semibold text-[18px] hover:text-span-blue hover:bg-white-color transition-all active:scale-[0.9]">
+            Biz haqimizda <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <img
+          class="absolute bottom-0 object-cover bg-no-repeat w-full"
+          src="./src/assets/svg/bg3.svg"
+          alt="" />
+      </div>
+    </section>
+    <!-- strong end  -->
+    <!-- connecting start  -->
+    <section class="inputarea bg-span-blue py-9">
+      <div class="container1 relative overflow-hidden">
+        <img class="absolute top-0" src="./src/assets/img/bg4.png" alt="" />
+        <div
+          class="flex gap-5 justify-between relative z-10 max-[916px]:flex-col">
+          <div class="flex items-center gap-3">
+            <img src="./src/assets/svg/face.svg" alt="" />
+            <div class="text-white">
+              <h1 class="font-semibold [17px]">Biz bilan bog’lanish</h1>
+              <p class="font-normal text-[14px]">
+                Feel free to ask questions, reports, issues and meet new people
+              </p>
+            </div>
+          </div>
+          <button
+            class="max-[500px]:px-5 px-10 py-5 bg-[#fff] rounded-[8px] text-text-blue font-semibold text-[18px] hover:bg-black hover:text-white transition-all active:scale-[0.9] max-[340px]:text-[14px]">
+            <span class="text-span-blue">#KhanAcademy</span>ga qo‘shilish
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- connecting end  -->
+    <!-- footer start  -->
+    <footer class="bg-[#f8fafc] py-[100px]">
+      <div class="container1 max-[410px]:flex justify-center max-[410px]:pl-5">
+        <div
+          class="text-[#8a90a5] flex items-start justify-between max-[907px]:grid grid-cols-3 max-[970px]:gap-5 max-[723px]:grid-cols-2 max-[410px]:grid-cols-1">
+          <div class="flex items-start flex-col gap-2">
+            <a href="">
+              <nav class="flex items-center gap-4">
+                <img src="./src/assets/svg/logo.svg" alt="" />
+                <nav class="flex items-start flex-col">
+                  <h1 class="text-span-blue text-[18px] font-bold">Khan</h1>
+                  <p class="text-span-blue text-[14px] font-normal">Academy</p>
+                </nav>
+              </nav>
+            </a>
+            <a class="hover:text-span-blue transition" class="my-5" href="">
+              Istiklal street, Tashkent,<br />
+              Uzbekistan, 200136
+            </a>
+            <div class="flex items-center gap-2">
+              <a
+                class="hover:text-span-blue transition"
+                href="https://www.facebook.com/"
+                ><img src="./src/assets/img/fcbk.png" alt=""
+              /></a>
+              <a
+                class="hover:text-span-blue transition"
+                href="https://www.twitter.com/"
+                ><img src="./src/assets/img/twtr.png" alt=""
+              /></a>
+              <a
+                class="hover:text-span-blue transition"
+                href="https://www.linkedin.com/"
+                ><img src="./src/assets/img/lnkdn.png" alt=""
+              /></a>
+              <a
+                class="hover:text-span-blue transition"
+                href="https://www.facebook.com/"
+                ><img src="./src/assets/img/fcbk.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="flex items-start flex-col gap-5">
+            <h1 class="font-semibold text-text-blue">Support</h1>
+            <a class="hover:text-span-blue transition" href="">Team</a>
+            <a class="hover:text-span-blue transition" href="">Careers</a>
+            <a class="hover:text-span-blue transition" href="">Blog</a>
+            <a class="hover:text-span-blue transition" href="">Security</a>
+          </div>
+          <div class="flex items-start flex-col gap-5">
+            <h1 class="font-semibold text-text-blue">Product</h1>
+            <a class="hover:text-span-blue transition" href=""
+              >Clinical Board</a
+            >
+            <a class="hover:text-span-blue transition" href="">News</a>
+            <a class="hover:text-span-blue transition" href="">Events</a>
+            <a class="hover:text-span-blue transition" href="">Contact</a>
+          </div>
+          <div class="flex items-start flex-col gap-5">
+            <h1 class="font-semibold text-text-blue">Security</h1>
+            <a class="hover:text-span-blue transition" href=""
+              >Privacy Policy</a
+            >
+            <a class="hover:text-span-blue transition" href=""
+              >Terms & Conditions</a
+            >
+            <a class="hover:text-span-blue transition" href="">Events</a>
+            <a class="hover:text-span-blue transition" href="">Contact</a>
+          </div>
+          <div class="flex items-start flex-col gap-5">
+            <h1 class="font-semibold text-text-blue">Subscribe</h1>
+            <p class="hover:text-span-blue transition">
+              Subscribe to get the latest news from us
+            </p>
+            <div
+              class="flex items-center justify-between p-1 bg-[#fff] rounded-[12px]">
+              <input
+                class="outline-none w-[100%] bg-transparent h-auto pl-3"
+                placeholder="hello@gmail.com"
+                type="email" />
+              <button
+                class="btn1 px-10 py-5 rounded-[8px] font-semibold text-[18px] transition-all active:scale-[0.9]">
+                <img
+                  class="hover:filter hover:brightness-0 hover:invert-1"
+                  src="./src/assets/svg/tg.svg"
+                  alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end  -->
+    <!-- this sections are for side bars  -->
+    <input class="hidden" id="check" type="checkbox" />
+    <header class="header2">
+      <nav class="flex">
+        <nav
+          class="flex items-start flex-col gap-5 bg-white-color w-[70%] p-6 relative">
+          <label
+            class="text-[20px] text-text-gray absolute top-[5%] right-6"
+            for="check">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+          <a href="">
+            <nav class="flex items-start gap-4 bg">
+              <img src="./src/assets/svg/logo.svg" alt="" />
+              <nav class="flex items-start flex-col">
+                <h1 class="text-span-blue text-[18px] font-bold">Khan</h1>
+                <p class="text-span-blue text-[14px] font-normal">Academy</p>
+              </nav>
+            </nav>
+          </a>
+
+          <nav class="flex items-start flex-col gap-4">
+            <ul class="flex items-start flex-col gap-4 text-text-blue">
+              <li class="hover:text-span-blue transition-all">
+                <a href="">Asosiy</a>
+              </li>
+              <li class="hover:text-span-blue transition-all">
+                <a href=""
+                  >Kurslarimiz <i class="fa-solid fa-chevron-down"></i
+                ></a>
+              </li>
+              <li class="hover:text-span-blue transition-all">
+                <a href="">Blog</a>
+              </li>
+              <li class="hover:text-span-blue transition-all">
+                <a href="">Biz haqimizda</a>
+              </li>
+              <li class="hover:text-span-blue transition-all">
+                <a href="">Bog’lanish</a>
+              </li>
+              <li class="hover:text-span-blue transition-all">
+                <a href=""></a>
+              </li>
+            </ul>
+            <nav class="flex-col items-start flex gap-4 text-text-blue">
+              <a href="./dashboard.html">
+                <button
+                  class="border border-[#eff2f7] rounded-[8px] py-[10px] px-[20px]">
+                  Kirish <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </nav>
+          </nav>
+        </nav>
+        <label
+          for="check"
+          class="w-[30%] h-[100vh] bg-[#6766664d] backdrop-blur-[1px]">
+          <nav></nav>
+        </label>
+      </nav>
+    </header>
+    <input type="checkbox" name="" id="profile" class="hidden" />
+    <div class="rounded-[12px] bg-white p-[20px] text-[13px] avaright">
+      <div class="border-b pb-[25px]">
+        <div class="flex items-center justify-between">
+          <h1 class="text-text-blue text-[20px] font-bold">Profilim</h1>
+          <label for="profile">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </div>
+        <div
+          class="flex items-center justify-center flex-col gap-2 py-3 my-[30px]">
+          <img src="./src/assets/img/avatar.png" alt="" />
+          <h2 class="text-text-blue text-[24px]">Kalimbetov Dilmurod</h2>
+          <p>O’quvchi</p>
+        </div>
+
+        <div
+          class="flex items-center justify-between max-[1340px]:flex-col max-[1340px]:items-center max-[1340px]:gap-2 max-[1009px]:flex-row max-[1009px]:flex-col">
+          <div class="flex items-center gap-2">
+            <img src="./src/assets/svg/tel.svg" alt="" />
+            <div>
+              <p class="text-[12px] text-[#8a90a5]">Telefon raqamim</p>
+              <a href="" class="etxt-[12px]">(90) 723 45 45</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./src/assets/img/location.png" alt="" />
+            <div>
+              <p class="text-[12px] text-[#8a90a5]">Manzilim</p>
+              <a href="" class="etxt-[12px]">Toshkent sh. Yun.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 1000); // 2 seconds
+      });
+    </script>
+  </body>
+</html>
